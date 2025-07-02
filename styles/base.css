@@ -1,0 +1,123 @@
+/*****************************COLORS********************************
+#8E9E95 -MUTE GREEN -> darker options: #4d6d5a, #6e8d7b
+#FFC857 -YELLOW
+****************************COLORS*********************************/
+
+
+/***************************FONTS*********************************
+.barriecito-regular {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.annie-use-your-telescope-regular {
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+********************************************************************/
+
+body {
+    font-family: "Annie Use Your Telescope", cursive;
+}
+
+/****************************HEADER*******************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #4d6d5a;
+    font-family: "Barriecito", system-ui;
+}
+
+/****************************HAMBURGER NAV*******************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #8E9E95;
+    cursor: pointer;
+    font-family: "Annie Use Your Telescope", cursive;
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/****************************NAVIGATION*******************************/
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #4d6d5a;
+    text-decoration: none;
+    border-bottom: solid 1px #8E9E95;
+}
+.navigation li.current {
+    background-color: #8E9E95;
+}
+.navigation a:hover {
+    background-color: #FFC857;
+}
+
+
+h1 {
+    margin-left: 10px;
+    font-family: "Barriecito", system-ui;
+}
+
+/*****************************FOOTER*******************************/
+footer {
+    background-color: #ddd;
+    padding: 1rem 10px;
+    text-align: center;
+    color: #4d6d5a;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #8E9E95 solid 1px;
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+}
+.icons img {
+    width: 22px;
+    height: 22px;
+}
+.icons a:hover {
+    background-color: #FFC857;
+}
