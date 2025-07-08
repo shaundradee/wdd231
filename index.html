@@ -3,45 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 | Student Home Page</title>
+    <meta name="description" content="WDD 231: Web Frontend Development I | Home Page">
+    <meta name="author" content="Shaundra Strong">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- 
-    alternative to hosting own reset or normalize css file is to use a content delivery network (CDN) reference. Like the following:
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    -->
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 
 </head>
 <body>
     <header>
-        <img src="images/nature-svgrepo-com.svg" alt="logo" width="800px" height="800px">
+        <img src="images/nature-svgrepo-com.svg" alt="Site Logo Mountains"/>
         <span>Shaundra Strong</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
     </header>
+
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+
+        <section class="about">
+            <div class="self">
+                <h2>About Me</h2>
+                <p>Hi! I'm Shaundra — a creative at heart, lifelong artist, and busy mom of two sweet girls. I grew up on a farm, and that love for the outdoors has never left me. These days, I split my time between homeschooling, gardening, baking (yes, I sell baked goods too!), and chasing after my three dogs and a small flock of backyard chickens... and my own education!</p>
+                <p>Before becoming a full-time mom, I worked in kitchen and bath design, combining function and beauty for clients. Now I'm channeling that creative energy into a new passion: software development. I'm currently pursuing a degree in the field and loving the challenge of building and solving things in a whole new way.</p>
+                <p>When I get a moment to breathe, you'll usually find me outside — hiking, hunting, or just soaking in the quiet. Life is full, and I wouldn't have it any other way!</p>
+            </div>
+            <div class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/selfSmall.webp" alt="Shaundra Strong" width="260" height="400">
+            </div>
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div id="course-buttons">
+                <button id="all-btn" type="button">All</button>
+                <button id="wdd-btn" type="button">WDD</button>
+                <button id="cse-btn" type="button">CSE</button>
+            </div>
+            <div id="courses-container"></div>
+        </section>
+
+        <section>
+            <h2>Total Credits</h2>
+            <p><span id="credits"></span></p>
+        </section>
     </main>
+
     <footer>
         <div class="icons">
             <a href="https://github.com/shaundradee" target="_blank"><img src="images/github.svg" alt="github"></a>
             <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn"></a>
             <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook"></a>
         </div>
-        <p>&copy; <span id="currentyear"></span></p>
+        <p>&copy; <span id="currentyear"></span> Shaundra Strong | North Carolina, USA</p>
         <p><span id="lastModified"></span></p>
     </footer>
 </body>

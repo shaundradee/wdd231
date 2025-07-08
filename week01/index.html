@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- 
+    alternative to hosting own reset or normalize css file is to use a content delivery network (CDN) reference. Like the following:
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/nature-svgrepo-com.svg" alt="logo" width="800px" height="800px">
+        <span>Shaundra Strong</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">News & Events</a></li>
+            <li class="current"><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Dedicated Temples</h1>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://github.com/shaundradee" target="_blank"><img src="images/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

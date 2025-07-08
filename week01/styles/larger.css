@@ -1,7 +1,7 @@
 @media only screen and (min-width: 38rem) {
 
     header, main, nav, footer {
-        max-width: 1200px;
+        max-width: 900px;
         margin: 0 auto;
     }
 
@@ -25,20 +25,5 @@
     .navigation a {
         border: none;
     }
-
-    .about {
-        display: grid;
-        grid-template-columns: 3fr 2fr;
-        gap: 1rem;
-    }
-
-    #courses-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 1px
-    }
-
-
 
 }

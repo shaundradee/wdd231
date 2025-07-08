@@ -1,0 +1,189 @@
+/*****************************COLORS********************************
+#8E9E95 -MUTE GREEN -> darker options: #4d6d5a, #6e8d7b
+#FFC857 -YELLOW
+****************************COLORS*********************************/
+
+
+/***************************FONTS*********************************
+.barriecito-regular {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+********************************************************************/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/****************************HEADER*******************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding-bottom: 2px;
+}
+
+header span {
+    font-size: 1.8rem;
+    color: #4d6d5a;
+    font-family: "Barriecito", system-ui;
+    padding-left: 20px;
+}
+
+/****************************HAMBURGER NAV*******************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #8E9E95;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/****************************NAVIGATION*******************************/
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #4d6d5a;
+    text-decoration: none;
+    border-bottom: solid 1px #8E9E95;
+}
+.navigation a:hover {
+    background-color: #FFC857;
+}
+
+
+h1 {
+    margin-left: 10px;
+    font-family: "Barriecito", system-ui;
+}
+
+h2 {
+    background-color: #8E9E95;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-family: "Barriecito", system-ui;
+}
+
+p, img, section {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 2px;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.self, .photo {
+    background-color: #dde6e1;
+    border-radius: 10px;
+}
+
+#course-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+#course-buttons button {
+    flex: 1 1 auto;
+}
+
+button:hover {
+    background-color: #FFC857;
+    border: none;
+    border-radius: 3px;
+}
+/***************************JS ADDED CARDS*****************************/
+
+.course-card {
+    background-color: #ddd;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.course-card h3 {
+    border-bottom: 1px solid black;
+    font-family: "Barriecito", system-ui;
+}
+
+.completed::before {
+  content: '\2713'; /* Unicode for checkmark */
+  color: #4d6d5a; 
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: inline-block;
+}
+/*****************************FOOTER*******************************/
+footer p {
+    background-color: #ddd;
+    padding: 1rem 10px;
+    text-align: center;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: 10px;
+}
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #8E9E95 solid 1px;
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+}
+.icons img {
+    width: 22px;
+    height: 22px;
+}
+.icons a:hover {
+    background-color: #FFC857;
+}

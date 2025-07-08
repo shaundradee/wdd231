@@ -7,3 +7,11 @@ navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
     navBar.classList.toggle('show');
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentyear").textContent = currentYear;
+
+    const lastModified = document.lastModified;
+    document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
+});
