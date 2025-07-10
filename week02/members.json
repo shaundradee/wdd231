@@ -1,0 +1,23 @@
+{
+    "family_name": "Rasmussen", 
+    "move_in_date": "2023-04-01",
+    "number_of_members": "3",
+    "visited_by_bishopric": true,
+    "members": [
+        {
+            "name": "Rachel Rasmussen",
+            "gender": "Female",
+            "birthday": "1981-05-02"
+        },
+        {
+            "name": "Jeremy Rasmussen",
+            "gender": "Male",
+            "birthday": "1979-07-21"
+        },
+        {
+            "name": "Trish Rasmussen",
+            "gender": "Female",
+            "birthday": "2016-07-14"
+        }
+    ]
+}
