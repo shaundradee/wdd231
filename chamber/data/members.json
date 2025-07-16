@@ -1,0 +1,65 @@
+[
+    {
+        "name" : "Restuarant on Main",
+        "address" : "100 Main Street, Draymoor, ST 12345",
+        "phone" : "931-123-0011",
+        "website" : "www.restuarant.siteexample.com",
+        "image" : ,
+        "membership_lvl" : 3,
+        "description" : "A local favorite serving Southern comfort food with a modern twist, open for breakfast, lunch, and dinner."
+    },
+    {
+        "name" : "Coffee Factory",
+        "address" : "121 Main Street, Draymoor, ST 12345",
+        "phone" : "931-321-1234",
+        "website" : "www.coffeefactory.example.com",
+        "image" : ,
+        "membership_lvl" : 2,
+        "description" : "Specialty coffee shop known for small-batch roasts, artisan pastries, and a cozy work-friendly atmosphere."
+    },
+    {
+        "name" : "Vita Juice",
+        "address" : "237 Pipers Road, Draymoor, ST 12345",
+        "phone" : "931-123-0101",
+        "website" : "www.vitajuice.example.com",
+        "image" : ,
+        "membership_lvl" : 2,
+        "description" : "Fresh juice bar offering organic smoothies, detox blends, and plant-based snacks for a healthier lifestyle."
+    },
+    {
+        "name" : "Tech Solutions",
+        "address" : "111 Industry Way, Draymoor, ST 12345",
+        "phone" : "931-123-1212",
+        "website" : "www.techsolutions.example.com",
+        "image" : ,
+        "membership_lvl" : 3,
+        "description" : "Professional IT services company providing business networking, cybersecurity, and software development."
+    },
+    {
+        "name" : "Henry's Handywork",
+        "address" : "515 Hoppers Lane, Draymoor, ST 12345",
+        "phone" : "931-515-1234",
+        "website" : "www.henryshandywork.example.com",
+        "image" : ,
+        "membership_lvl" : 1,
+        "description" : "Reliable handyman services specializing in home repairs, installations, and seasonal maintenance."
+    },
+    {
+        "name" : "Bill and Sons Contracting",
+        "address" : "71 Sunrise Drive, Draymoor, ST 12345",
+        "phone" : "931-123-4444",
+        "website" : "www.billsonscontracting.example.com",
+        "image" : ,
+        "membership_lvl" : 2,
+        "description" : "Licensed general contractors offering residential remodeling, roofing, and new construction services."
+    },
+    {
+        "name" : "Sally's Beauty Boutique",
+        "address" : "1324 Commercial Plaza, Draymoor, ST 12345",
+        "phone" : "931-123-1233",
+        "website" : "www.sallysbeautyboutique.example.com",
+        "image" : ,
+        "membership_lvl" : 1,
+        "description" : "Chic full-service salon providing hair styling, nails, facials, and makeup for all occasions."
+    }
+]
