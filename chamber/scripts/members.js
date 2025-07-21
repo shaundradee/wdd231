@@ -27,7 +27,7 @@ function displayMembers(members) {
             <h3 class="member-name"><strong>${member.name}</strong></h3>
             <p class="description">${member.description}</p>
             <div class="card-content">
-                <img src="images/${member.image}" alt="${member.name} logo">
+                <img src="images/${member.image}" alt="${member.name} logo" width="100" height="100" loading="lazy">
                 <div class="info">
                     <p><strong>Address:</strong> ${member.address}</p>
                     <p><strong>Phone:</strong> ${member.phone}</p>
