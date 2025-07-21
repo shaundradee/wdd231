@@ -145,7 +145,6 @@ nav a.active {
 #membersContainer.list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 #membersContainer.list .description,
@@ -165,6 +164,7 @@ nav a.active {
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
+  align-items: center; 
 }
 
 
@@ -175,6 +175,8 @@ nav a.active {
 }
 
 .description {
+  display: block;
+  min-height: 50px;
   margin: 0.5rem 0;
   border-bottom: 1px solid #A68A64;
   color: #5A3E36;
@@ -204,7 +206,7 @@ nav a.active {
 
 /* === Footer === */
 footer {
-  min-height: 150px;
+  min-height: 200px;
   background-color: #5A3E36;
   color: #F4F1ED;
   display: flex;

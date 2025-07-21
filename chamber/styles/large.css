@@ -41,9 +41,7 @@
         align-items: center;
         gap: 1rem;
         padding: 1rem;
-        border-bottom: 1px solid #ccc;
-        box-shadow: none;
-        border-radius: 0;
+        border-radius: 5px;
         background-color: #fff;
     }
 
@@ -57,35 +55,6 @@
         display: contents;
     }
 
-    #membersContainer.list h3.member-name {
-        grid-column: 1 / 2;
-        margin: 0;
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    #membersContainer.list .address {
-        grid-column: 2 / 3;
-    }
-
-    #membersContainer.list .phone {
-        grid-column: 3 / 4;
-    }
-
-    #membersContainer.list .website {
-        grid-column: 4 / 5;
-    }
-
-    #membersContainer.list .address,
-    #membersContainer.list .phone,
-    #membersContainer.list .website {
-        margin: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
 
     /* === Footer View === */
     footer {
