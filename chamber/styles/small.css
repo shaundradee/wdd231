@@ -13,6 +13,12 @@ Text (Main)
 #2C2C2C	Charcoal — easy-to-read, warm-neutral black
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* === Base Layout === */
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -198,6 +204,7 @@ nav a.active {
 
 /* === Footer === */
 footer {
+  min-height: 150px;
   background-color: #5A3E36;
   color: #F4F1ED;
   display: flex;
@@ -209,6 +216,7 @@ footer {
 }
 
 footer .icons img {
+  width: 44px;
   height: 44px;
   padding: 5px;
 }
