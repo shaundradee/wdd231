@@ -112,6 +112,13 @@ nav a:hover {
   color: #2C2C2C;
 }
 
+/* === Wayfinding === */
+nav a.active {
+  font-weight: bold;
+  border-bottom: 5px solid #A68A64;
+  color: #F4F1ED;
+}
+
 /* === View Toggle Buttons === */
 .view-toggle {
   text-align: center;
@@ -210,14 +217,16 @@ footer {
 }
 
 footer .icons img {
-  height: 34px;
+  height: 44px;
+  padding: 5px;
 }
 
-.icons a {
+/* .icons a {
   width: 44px;
   height: 44px;
-}
+} */
 
 .icons a:hover {
   background-color: #D6B88D;
+  border-radius: 45%;
 }

@@ -118,10 +118,6 @@
         margin: .5rem;
     }
 
-    .icons a:hover {
-        background-color: #D6B88D;
-        border-radius: 45%;
-    }
 
     footer .web {
         grid-column: 3/4;
