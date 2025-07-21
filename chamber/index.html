@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Draymoor Chamber of Commerce</title>
-    <meta name="description" content="WDD 231: Web Frontend Development I | Draymoor Chamber of Commmerce Directory">
+    <title>Chamber Home Page</title>
+    <meta name="description" content="WDD 231: Web Frontend Development I | Draymoor Chamber of Commmerce Home Page">
     <meta name="author" content="Shaundra Strong">
 
-    <meta property="og:title" content="Draymoor Chamber of Commerce">
+    <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:description" content="WDD 231: Web Frontend Development | Draymoor Chamber of Commerce">
-    <meta property="og:image" content="">
-    <meta property="url" content="https://shaundradee.github.io/wdd231">
+    <meta property="og:image" content="https://shaundradee.github.io/wdd231/chamber/images/chamber_hero.webp">
+    <meta property="og:url" content="https://shaundradee.github.io/wdd231">
 
     <link rel="icon" href="favicon.ico">
 
@@ -20,16 +20,15 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 769px)">
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/" defer></script>
-    <script src="scripts/" defer></script>
+    <script src="scripts/members.js" defer></script>
 
 </head>
 <body>
     <header>
         <img src="images/draymoorlogo.webp" alt="draymoor chamber of commerce logo">
-        <h1>Draymoor Chamber of Commerce</h1>
+        <div class="site-title">Draymoor Chamber of Commerce</div>
         <button id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
             &#9776;
         </button>
@@ -41,12 +40,12 @@
                 <li><a href="#join">Join</a></li>
             </ul>
         </nav>
-    <button id="darkModeToggle">🌗</button>
     </header>
-    <main>
+    <section class="hero">
         <img src="images/chamber_hero.webp" alt="town image">
-        <button class="cta">Keynote Tickets</button>
-
+        <button href="#join" class="cta">Join the Chamber</button>
+    </section>
+    <main>
         <h1>Home</h1>
 
         <section class="info-grid">
@@ -69,7 +68,7 @@
 
     </main>
     <footer>
-        <div>
+        <div class="chamb">
             <h3>Draymoor Chamber of Commerce</h3>
             <p>101 Makebeleive Ave</p>
             <p>Draymoor, ST 12345</p>
@@ -77,15 +76,15 @@
             <p>(931) 123-6611</p>
         </div>
         <div class="icons">
-            <a href="https://github.com/shaundradee" target="_blank"><img src="images/github.svg" alt="github icon"></a>
-            <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook"></a>
+            <a href="https://github.com/shaundradee" target="_blank"><img src="images/github.svg" alt="github icon" width="44" height="44"></a>
+            <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn" width="44" height="44"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook" width="44" height="44"></a>
         </div>
-        <div>
+        <div class="web">
             <p>WDD231 Class Project</p>
             <p>Shaundra Strong</p>
-            <p>&copy; <span id="currentyear"></span> Draymoor Chamber of Commerce</p>
-            <p><span id="lastModified"></span></p>
+            <p>&copy; <span id="currentyear">2025</span> Shaundra Strong | North Carolina, USA</p>
+            <p><span id="lastModified">Modification Loading...</span></p>
         </div>
     </footer>
 </body>
