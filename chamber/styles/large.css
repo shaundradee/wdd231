@@ -92,7 +92,7 @@
         background-color: #5A3E36;
         color: #F4F1ED;
         display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 1rem;
         gap: 1rem;
         font-size: 0.9rem;
