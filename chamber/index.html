@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Draymoor Chamber of Commerce</title>
     <meta name="description" content="WDD 231: Web Frontend Development I | Draymoor Chamber of Commmerce Directory">
     <meta name="author" content="Shaundra Strong">
 
-    <meta property="og:title" content="">
+    <meta property="og:title" content="Draymoor Chamber of Commerce">
     <meta property="og:description" content="WDD 231: Web Frontend Development | Draymoor Chamber of Commerce">
     <meta property="og:image" content="">
     <meta property="url" content="https://shaundradee.github.io/wdd231">
@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/" defer></script>
+    <script src="scripts/" defer></script>
 
 </head>
 <body>
@@ -40,17 +41,35 @@
                 <li><a href="#join">Join</a></li>
             </ul>
         </nav>
+    <button id="darkModeToggle">🌗</button>
     </header>
     <main>
-        <div class="view-toggle">
-            <button id="gridView">Grid View</button>
-            <button id="listView">List View</button>
-        </div>
+        <img src="images/chamber_hero.webp" alt="town image">
+        <button class="cta">Keynote Tickets</button>
 
-        <div id="membersContainer" class="grid"></div>
+        <h1>Home</h1>
+
+        <section class="info-grid">
+            <div class="events">
+                <h2>Events</h2>
+            </div>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+            </div>
+        </section>
+
+        <section class="business-spotlights">
+            <div class="business-card">Business 1</div>
+            <div class="business-card">Business 2</div>
+            <div class="business-card">Business 3</div>
+        </section>
+
     </main>
     <footer>
-        <div class="chamb">
+        <div>
             <h3>Draymoor Chamber of Commerce</h3>
             <p>101 Makebeleive Ave</p>
             <p>Draymoor, ST 12345</p>
@@ -62,18 +81,13 @@
             <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn"></a>
             <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook"></a>
         </div>
-        <div class="web">
+        <div>
             <p>WDD231 Class Project</p>
             <p>Shaundra Strong</p>
-            <p>&copy; <span id="currentyear"></span> Shaundra Strong | North Carolina, USA</p>
+            <p>&copy; <span id="currentyear"></span> Draymoor Chamber of Commerce</p>
             <p><span id="lastModified"></span></p>
         </div>
     </footer>
 </body>
 </html>
 
-<!--“Rooted in Tradition. Growing Together.”
-
-“Connecting Draymoor’s Past, Present, and Progress.”
-
-“Your Partner in Local Prosperity.”-->

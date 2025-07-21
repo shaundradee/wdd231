@@ -1,0 +1,130 @@
+@media screen and (min-width: 769px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+        position: static;
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        color: #F4F1ED;
+    }
+
+    nav a:hover {
+        background-color: #A68A64;
+        color: #fff;
+    }
+
+    /* === Member Card Grid View Enhancements === */
+    .member-card {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .card-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* === List View: Desktop Row Alignment === */
+    #membersContainer.list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr 3fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #fff;
+    }
+
+    #membersContainer.list .description,
+    #membersContainer.list .card-content img {
+        display: none;
+    }
+
+    #membersContainer.list .card-content,
+    #membersContainer.list .info {
+        display: contents;
+    }
+
+    #membersContainer.list h3.member-name {
+        grid-column: 1 / 2;
+        margin: 0;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #membersContainer.list .address {
+        grid-column: 2 / 3;
+    }
+
+    #membersContainer.list .phone {
+        grid-column: 3 / 4;
+    }
+
+    #membersContainer.list .website {
+        grid-column: 4 / 5;
+    }
+
+    #membersContainer.list .address,
+    #membersContainer.list .phone,
+    #membersContainer.list .website {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* === Footer View === */
+    footer {
+        background-color: #5A3E36;
+        color: #F4F1ED;
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        padding: 1rem;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    footer .chamb {
+        grid-column: 1/2;
+        text-align: left;
+    }
+
+    footer .icons {
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .icons a {
+        width: 54px;
+        height: 54px;
+        align-items: center;
+        justify-content: center;
+        margin: .5rem;
+    }
+
+    .icons a:hover {
+        background-color: #D6B88D;
+        border-radius: 45%;
+    }
+
+    footer .web {
+        grid-column: 3/4;
+        text-align: left;
+    }
+}
