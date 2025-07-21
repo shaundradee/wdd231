@@ -1,19 +1,4 @@
 /*
-.xanh-mono-regular {
-  font-family: "Xanh Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ibm-plex-sans-<uniquifier> {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
 Primary	
 #5A3E36	Walnut Brown — evokes wood, tradition, and warmth	
 Accent 1	
@@ -85,7 +70,6 @@ nav ul {
   position: absolute;
   top: 100%;
   right: 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   z-index: 1000;
   margin: 0;
   gap: 1rem;
@@ -94,11 +78,6 @@ nav ul {
 nav ul.show {
   display: flex;
 }
-
-/* nav ul.hide {
-  display: none;
-}
- */
 
 nav a {
   color: #5A3E36;
@@ -220,11 +199,6 @@ footer .icons img {
   height: 44px;
   padding: 5px;
 }
-
-/* .icons a {
-  width: 44px;
-  height: 44px;
-} */
 
 .icons a:hover {
   background-color: #D6B88D;
