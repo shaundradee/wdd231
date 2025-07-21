@@ -29,9 +29,9 @@ function displayMembers(members) {
             <div class="card-content">
                 <img src="images/${member.image}" alt="${member.name} logo">
                 <div class="info">
-                    <p class="address"><strong>Address:</strong> ${member.address}</p>
-                    <p class="phone"><strong>Phone:</strong> ${member.phone}</p>
-                    <p class="website"><strong>Website:</strong> ${member.website}</p>
+                    <p><strong>Address:</strong> ${member.address}</p>
+                    <p><strong>Phone:</strong> ${member.phone}</p>
+                    <p><strong>Website:</strong> ${member.website}</p>
                 </div>
             </div>
         `;
