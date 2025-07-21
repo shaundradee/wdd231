@@ -149,6 +149,7 @@ nav a.active {
 
 
 .member-card {
+  min-height: 200px; /* estimated */
   background-color: #FFFFFF;
   border: 1px solid #A68A64;
   border-radius: 8px;
@@ -159,6 +160,7 @@ nav a.active {
   gap: 0.5rem;
   text-align: center;
 }
+
 
 .member-card h3 {
   margin: 0;
@@ -171,6 +173,8 @@ nav a.active {
   border-bottom: 1px solid #A68A64;
   color: #5A3E36;
   font-style: italic;
+  min-height: 2.5rem; /* adjust if needed */
+  overflow: hidden;
 }
 
 .card-content {
@@ -181,8 +185,11 @@ nav a.active {
 }
 
 .card-content img {
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 4px;
+  display: block;
 }
 
 .card-content .info p {
