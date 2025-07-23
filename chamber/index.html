@@ -22,10 +22,11 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 769px)">
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 
 </head>
-<body>
+<body id="home">
     <header>
         <img src="images/draymoorlogo.webp" alt="draymoor chamber of commerce logo">
         <div class="site-title">Draymoor Chamber of Commerce</div>
@@ -51,9 +52,14 @@
         <section class="info-grid">
             <div class="events">
                 <h2>Events</h2>
+                <div class="event-content">
+                    <img src="images/art-park.webp" alt="art in the park image">
+                    <p>Art in the Park! Outdoor art show with local artists and craftspeople!</p>
+                </div>
             </div>
             <div class="current-weather">
                 <h2>Current Weather</h2>
+                <div class="current-content"></div>
             </div>
             <div class="forecast">
                 <h2>Weather Forecast</h2>
@@ -61,9 +67,6 @@
         </section>
 
         <section class="business-spotlights">
-            <div class="business-card">Business 1</div>
-            <div class="business-card">Business 2</div>
-            <div class="business-card">Business 3</div>
         </section>
 
     </main>

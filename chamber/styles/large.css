@@ -23,6 +23,26 @@
         color: #fff;
     }
 
+    /* === Home Page === */
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .events {
+        grid-column: 1/3;
+    }
+
+    .business-spotlights{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .5rem;
+        flex-direction: row;
+    }
+
+
     /* === Member Card Grid View Enhancements === */
     .member-card {
         text-align: left;

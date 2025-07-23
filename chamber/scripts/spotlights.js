@@ -1,27 +1,40 @@
-const container = document.querySelector('#membersContainer');
-const gridBtn = document.querySelector('#gridView');
-const listBtn = document.querySelector('#listView');
+const spotlightContainer = document.querySelector(".business-spotlights");
 
-// Fetch and display the business members
-async function loadMembers() {
+
+async function getMembers() {
     try {
         const response = await fetch('data/members.json');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const members = await response.json();
-        displayMembers(members);
+        displaySpotlights(members);
     }
     catch (error) {
         console.error('Could not load members:', error);
     }
 }
 
-function displayMembers(members) {
-    container.innerHTML = ''; // Clear existing content
-    members.forEach(member => {
+
+
+function displaySpotlights(members) {
+  
+    // Filter for Gold or Silver members only
+    const qualified = members.filter(member =>
+        [2, 3].includes(member.membership_lvl)
+    );
+
+    // Randomize and pick 3
+    const selected = qualified.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+    // Clear placeholder
+    spotlightContainer.innerHTML = "";
+
+    selected.forEach(member => {
         const card = document.createElement('section');
         card.classList.add('member-card');
+        card.classList.add('grid');
+
 
         card.innerHTML = `
             <h3 class="member-name"><strong>${member.name}</strong></h3>
@@ -36,22 +49,8 @@ function displayMembers(members) {
             </div>
         `;
 
-        container.appendChild(card);
+        spotlightContainer.appendChild(card);
     });
 }
 
-// Toggle Views
-gridBtn.addEventListener('click', () => {
-    container.classList.add('grid');
-    container.classList.remove('list');
-});
-
-listBtn.addEventListener('click', () => {
-    container.classList.add('list');
-    container.classList.remove('grid');
-});
-
-// Load on page load
-loadMembers();
-
-
+getMembers();
