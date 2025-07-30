@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Joinging Form</title>
+    <title>Chamber of Commerce Join</title>
     <meta name="description" content="WDD 231: Web Frontend Development I | Draymoor Chamber of Commmerce Joining Form Page">
     <meta name="author" content="Shaundra Strong">
 
@@ -41,6 +41,9 @@
             </ul>
         </nav>
     </header>
+    <section>
+        <h1>Join</h1>
+    </section>
     <main>
         <form action="thankyou.html" method="get">
             <h2>Chamber Membership Application</h2>
@@ -53,9 +56,9 @@
                 <label for="title">Organizational TItle:</label>
                 <input type="text" name="title" id="title" title="Enter your current title." autocomplete="organization-title"   pattern="[A-Za-z\- ]{7,}"> 
                 <label for="email">Email Address: *</label>
-                <input type="text" name="email" id="eamil" title="Enter valid email address." autocomplete="email" required placeholder="your.email.address@gmail.com">
+                <input type="text" name="email" id="email" title="Enter valid email address." autocomplete="email" required placeholder="your.email.address@gmail.com">
                 <label for="mphone">Mobile Phone Number: *</label>
-                <input type="tel" name="mphone" id="mphone" title="Enter best contact number." autocomplete="mphone" required>
+                <input type="tel" name="mphone" id="mphone" title="Enter best contact number." autocomplete="tel" required>
             </fieldset>
             <fieldset>
                 <legend>Organization Information</legend>
@@ -72,7 +75,7 @@
                 <textarea name="description" id="description" rows="6" cols="45" title="Enter a brief description of your organization"></textarea>
                 <input type="hidden" name="timestamp" id="timestamp">
             </fieldset>
-            <button type="submit" class="joinbtn">APPLY NOW!</button>
+            <button type="submit" class="joinbtn">JOIN NOW!</button>
         </form>
         <section>
             <h2>Membership Levels</h2>
