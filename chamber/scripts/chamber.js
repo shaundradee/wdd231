@@ -144,7 +144,11 @@ function thanksMessage() {
   const mphone = data.get("mphone");
   const org = data.get("orgname");
 
-
+  const timestamp = document.getElementById("timestamp");
+  const now = new Date();
+  const formatted = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+  timestamp.value = formatted;
+  
   document.getElementById("userThanks").textContent = `Welcome, ${fname}! We're glad you joined.`;
 
   const messageDiv = document.querySelector("#message");
@@ -155,6 +159,7 @@ function thanksMessage() {
   <p>Last Name: ${lname}</p>
   <p>Email: ${email}</p>
   <p>Mobile Phone: ${mphone}</p>
-  <p>Organination: ${org}</p>
+  <p>Organization: ${org}</p>
+  <p>Submitted: ${timestamp.value}</p>
   `;
 }
