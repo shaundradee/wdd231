@@ -75,6 +75,42 @@
         display: contents;
     }
 
+    /* === Join Page === */
+    #join main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .mem-card {
+        margin: .5rem auto;
+        display: block;
+        justify-items: center;
+        align-content: center;
+        animation: slideLevels;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    .modalbtn {
+        margin: 10px;
+    }
+
+    @keyframes slideLevels {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
     /* === Footer View === */
     footer {

@@ -12,12 +12,29 @@ menuToggle.addEventListener('click', () => {
 
 // ==== event listener for page loading
 document.addEventListener("DOMContentLoaded", () => {
-    const page = document.body.id;
+  const page = document.body.id;
 
-    if (page === "home") {
-        getWeather();
-    }
+  if (page === "home") {
+    getWeather();
+  }
+  if (page === "join") {
+    document.querySelectorAll('.mem-card').forEach(card => {
+      const modal = card.querySelector('.memberinfo');
+      const openBtn = card.querySelector('.modalbtn');
+      const closeBtn = card.querySelector('.close');
 
+      openBtn.addEventListener('click', () => {
+        modal.showModal();
+      });
+
+      closeBtn.addEventListener('click', () => {
+        modal.close();
+      });
+    });
+  }
+  if (page === "thankyou") {
+    thanksMessage();
+  }
 });
 
 
@@ -116,4 +133,28 @@ function getIconFilename(code) {
   if ([56, 57, 66, 67].includes(code)) return "weather-snowflake.svg"; // Freezing drizzle/rain
 
   return "thermometer-sun.svg"; // Default fallback
+}
+
+// Join to Thank You page
+function thanksMessage() {
+  const data = new URLSearchParams(window.location.search);
+  const fname = data.get("fname");
+  const lname = data.get("lname");
+  const email = data.get("email");
+  const mphone = data.get("mphone");
+  const org = data.get("orgname");
+
+
+  document.getElementById("userThanks").textContent = `Welcome, ${fname}! We're glad you joined.`;
+
+  const messageDiv = document.querySelector("#message");
+
+  messageDiv.innerHTML = `
+  <h3>Together we will build a brighter and successful future!</h3>
+  <p>First Name: ${fname}</p>
+  <p>Last Name: ${lname}</p>
+  <p>Email: ${email}</p>
+  <p>Mobile Phone: ${mphone}</p>
+  <p>Organination: ${org}</p>
+  `;
 }

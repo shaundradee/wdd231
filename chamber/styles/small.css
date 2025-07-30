@@ -1,4 +1,5 @@
 /*
+---- Color Options ----
 Primary	
 #5A3E36	Walnut Brown — evokes wood, tradition, and warmth	
 Accent 1	
@@ -14,9 +15,9 @@ Text (Main)
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* === Base Layout === */
@@ -111,13 +112,13 @@ header .site-title {
 
 
 .event-content p,
-.current-content p  {
+.current-content p {
   grid-column: 2/3;
   justify-content: center;
-  align-content: center; 
+  align-content: center;
 }
 
-.forecast > div {
+.forecast>div {
   padding: 2px;
 }
 
@@ -188,13 +189,14 @@ nav a.active {
   color: #F4F1ED;
 }
 
-/* === View Toggle Buttons === */
-.view-toggle { 
+/* === View Toggle Buttons, JOIN Page Buttons === */
+.view-toggle {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.view-toggle button {
+.view-toggle button,
+button {
   background-color: #D6B88D;
   color: #2C2C2C;
   border: none;
@@ -206,7 +208,8 @@ nav a.active {
 }
 
 .view-toggle button:hover,
-.view-toggle button.active {
+.view-toggle button.active,
+button:hover {
   background-color: #A68A64;
 }
 
@@ -232,8 +235,12 @@ nav a.active {
 .member-card,
 .current-weather,
 .forecast,
-.events {
-  min-height: 200px; /* estimated */
+.events,
+.mem-card,
+.thankyou, 
+#message {
+  min-height: 200px;
+  /* estimated */
   background-color: #FFFFFF;
   border: 1px solid #A68A64;
   border-radius: 8px;
@@ -243,11 +250,12 @@ nav a.active {
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
-  align-items: center; 
+  align-items: center;
 }
 
 
-.member-card h3 {
+.member-card h3,
+.mem-card {
   margin: 0;
   color: #5A3E36;
   font-size: 1.2rem;
@@ -260,7 +268,7 @@ nav a.active {
   border-bottom: 1px solid #A68A64;
   color: #5A3E36;
   font-style: italic;
-  min-height: 2.5rem; /* adjust if needed */
+  min-height: 2.5rem;
   overflow: hidden;
 }
 
@@ -282,6 +290,107 @@ nav a.active {
 .card-content .info p {
   margin: 0.25rem 0;
 }
+
+/* === JOIN Page === */
+form fieldset,
+form h2 {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  padding: 8px;
+}
+
+form {
+  background: #F4F1ED;
+  border: 1px solid #A68A64;
+  margin: 0 auto;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+legend {
+  padding: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#join h2 {
+  font-family: 'Xanh Mono', monospace;
+  padding: 1rem;
+}
+
+.joinbtn {
+  margin: 1rem auto;
+  display: block;
+}
+
+form label,
+form input {
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.memberinfo {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.memberinfo h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.memberinfo p {
+  font-style: italic;
+  margin: 1rem;
+}
+
+.memberinfo li {
+  margin-left: 2rem;
+}
+
+.close {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+dialog {
+  position: fixed;
+  min-width: 300px;
+  top: 10vh;   /* 10% from top of viewport */
+  left: 50%;   /* center horizontally */
+  transform: translateX(-50%);  /* adjust to center the box */
+  border: none;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  background: white;
+}
+
+dialog::backdrop {
+  background-color: rgba(36, 36, 36, 0.5);
+}
+
+/* === Thank You Page === */
+.thankyou h2, 
+#message h3 {
+  font-family: 'Xanh Mono', monospace;
+  color: #5A3E36;
+  padding: 1rem;
+}
+
+.thankyou, 
+#message {
+  margin: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
 
 /* === Footer === */
 footer {

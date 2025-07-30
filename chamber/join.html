@@ -42,48 +42,100 @@
         </nav>
     </header>
     <main>
-        <form action="/action_page.php" method="get">
-            <label for="fname">First Name:</label>
-            <input type="text" name="fname" title="Enter preferred name." id="fname" autocomplete="given-name" required>
-            <label for="lname">Last Name:</label>
-            <input type="text" name="lname" title="Enter last name." id="lname" autocomplete="family-name" required>
-            <label for="title">Organizational TItle:</label>
-            <input type="text" name="title" id="title" title="Enter your current title." autocomplete="organization-title"   pattern="[A-Za-z\- ]{7,}"> 
-            <label for="email">Email Address:</label>
-            <input type="text" name="email" id="eamil" title="Enter valid email address." autocomplete="email" required placeholder="your.email.address@gmail.com">
-            <label for="mphone">Mobile Phone Number:</label>
-            <input type="tel" name="mphone" id="mphone" title="Enter best contact number." autocomplete="mphone" required>
-            <label for="orgname">Business/Organization Name:</label>
-            <input type="text" name="orgname" id="orgname" title="Pleae enter the organization's name" autocomplete="organization">
-            <label for="membersip">Membership Level:</label>
-            <select name="membersip" id="membersip">
-                <option value="npmember">Nonprofit Membership</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
-            <label for="description">Business/Organization description:</label>
-            <textarea name="description" id="description" rows="4" cols="45" title="Enter a brief description of your organization"></textarea>
-            <input type="hidden" name="timestamp" id="timestamp">
-            <button type="submit">JOIN NOW!</button>
+        <form action="thankyou.html" method="get">
+            <h2>Chamber Membership Application</h2>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">First Name: *</label>
+                <input type="text" name="fname" title="Enter preferred name." id="fname" autocomplete="given-name" required>
+                <label for="lname">Last Name: *</label>
+                <input type="text" name="lname" title="Enter last name." id="lname" autocomplete="family-name" required>
+                <label for="title">Organizational TItle:</label>
+                <input type="text" name="title" id="title" title="Enter your current title." autocomplete="organization-title"   pattern="[A-Za-z\- ]{7,}"> 
+                <label for="email">Email Address: *</label>
+                <input type="text" name="email" id="eamil" title="Enter valid email address." autocomplete="email" required placeholder="your.email.address@gmail.com">
+                <label for="mphone">Mobile Phone Number: *</label>
+                <input type="tel" name="mphone" id="mphone" title="Enter best contact number." autocomplete="mphone" required>
+            </fieldset>
+            <fieldset>
+                <legend>Organization Information</legend>
+                <label for="orgname">Business/Organization Name:</label>
+                <input type="text" name="orgname" id="orgname" title="Pleae enter the organization's name" autocomplete="organization">
+                <label for="membersip">Membership Level:</label>
+                <select name="membersip" id="membersip">
+                    <option value="npmember">Nonprofit Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                <label for="description">Business/Organization description:</label>
+                <textarea name="description" id="description" rows="6" cols="45" title="Enter a brief description of your organization"></textarea>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+            <button type="submit" class="joinbtn">APPLY NOW!</button>
         </form>
         <section>
-                <h2>Membership Levels</h2>
-            <div>
+            <h2>Membership Levels</h2>
+            <div class="mem-card">
                 <h3>Nonprofit Membership</h3>
-                <button>Learn More</button>
+                <button class="modalbtn">Learn More</button>
+                <dialog class="memberinfo">
+                    <h3>Nonprofit Membership (Free)</h3>
+                    <p>Ideal for local nonprofits and community organizations.</p>
+                    <ul>
+                        <li>Access to general chamber events</li>
+                        <li>Listing in the chamber member directory</li>
+                        <li>Networking opportunities with local businesses</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </dialog>
             </div>
-            <div>
+            <div class="mem-card">
                 <h3>Bronze Membership</h3>
-                <button>Learn More</button>
+                <button class="modalbtn">Learn More</button>
+                <dialog class="memberinfo">
+                    <h3>Bronze Membership ($)</h3>
+                    <p>Great for small businesses starting out.</p>
+                    <ul>
+                        <li>All nonprofit benefits, plus:</li>
+                        <li>Discounts on chamber-hosted events</li>
+                        <li>Monthly member newsletter inclusion</li>
+                        <li>Invitation to basic business workshops</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </dialog>
             </div>
-            <div>
+            <div class="mem-card">
                 <h3>Silver Membership</h3>
-                <button>Learn More</button>
+                <button class="modalbtn">Learn More</button>
+                <dialog class="memberinfo">
+                    <h3>Silver Membership ($$)</h3>
+                    <p>Perfect for growing businesses seeking visibility.</p>
+                    <ul>
+                        <li>All Bronze benefits, plus:</li>
+                        <li>Featured spotlight in member directory</li>
+                        <li>Social media promotion by the chamber</li>
+                        <li>Priority access to training seminars and mixers</li>
+                        <li>One free booth at the annual business expo</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </dialog>
             </div>
-            <div>
+            <div class="mem-card">
                 <h3>Gold Membership</h3>
-                <button>Learn More</button>
+                <button class="modalbtn">Learn More</button>
+                <dialog class="memberinfo">
+                    <h3>Gold Membership ($$$)</h3>
+                    <p>Designed for established businesses ready to lead.</p>
+                    <ul>
+                        <li>All Silver benefits, plus:</li>
+                        <li>Rotating homepage spotlight on the chamber website</li>
+                        <li>Sponsorship opportunities at high-profile events</li>
+                        <li>VIP invitations to exclusive networking receptions</li>
+                        <li>Customized advertising package</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </dialog>
             </div>
         </section>
     </main>
