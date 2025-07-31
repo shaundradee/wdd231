@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (page === "home") {
     getWeather();
+    document.getElementById("theButton").addEventListener("click", function() {
+    window.location.href = "join.html";
+  });
   }
   if (page === "join") {
     document.querySelectorAll('.mem-card').forEach(card => {
@@ -31,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.close();
       });
     });
+    timestamp();
   }
   if (page === "thankyou") {
     thanksMessage();
@@ -143,15 +147,11 @@ function thanksMessage() {
   const email = data.get("email");
   const mphone = data.get("mphone");
   const org = data.get("orgname");
+  const time = data.get("timestamp")
 
-  const timestamp = document.getElementById("timestamp");
-  const now = new Date();
-  const formatted = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
-  timestamp.value = formatted;
-  
   document.getElementById("userThanks").textContent = `Welcome, ${fname}! We're glad you joined.`;
 
-  const messageDiv = document.querySelector("#message");
+  const messageDiv = document.getElementById("message");
 
   messageDiv.innerHTML = `
   <h3>Together we will build a brighter and successful future!</h3>
@@ -160,6 +160,22 @@ function thanksMessage() {
   <p>Email: ${email}</p>
   <p>Mobile Phone: ${mphone}</p>
   <p>Organization: ${org}</p>
-  <p>Submitted: ${timestamp.value}</p>
+  <p>Submitted: ${time}</p>
   `;
 }
+
+function timestamp() {
+  const today = new Date();
+  const formatter = new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+  });
+  const formattedDate = formatter.format(new Date());  
+  document.getElementById("timestamp").value = formattedDate;
+}
+
+
+

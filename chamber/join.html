@@ -62,10 +62,11 @@
             </fieldset>
             <fieldset>
                 <legend>Organization Information</legend>
-                <label for="orgname">Business/Organization Name:</label>
-                <input type="text" name="orgname" id="orgname" title="Pleae enter the organization's name" autocomplete="organization">
+                <label for="orgname">Business/Organization Name: *</label>
+                <input type="text" name="orgname" id="orgname" title="Pleae enter the organization's name" autocomplete="organization" required>
                 <label for="membersip">Membership Level:</label>
                 <select name="membersip" id="membersip">
+                    <option value="">Please Select &#9662;</option>
                     <option value="npmember">Nonprofit Membership</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
@@ -73,7 +74,7 @@
                 </select>
                 <label for="description">Business/Organization description:</label>
                 <textarea name="description" id="description" rows="6" cols="45" title="Enter a brief description of your organization"></textarea>
-                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="hidden" name="timestamp" id="timestamp" value="">
             </fieldset>
             <button type="submit" class="joinbtn">JOIN NOW!</button>
         </form>
