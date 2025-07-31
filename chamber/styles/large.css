@@ -79,14 +79,23 @@
     #join main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px auto;
         gap: 1rem;
     }
 
+    #join main .element-wrapper {
+        grid-column: 1/-1;
+    }
+
     form {
+        grid-column: 1/2;
+        grid-row: 2/3;
         width: 100%;
     }
 
     .mem-card {
+        grid-column: 2/3;
+        grid-row: 2/3;
         margin: .5rem auto;
         display: block;
         justify-items: center;
