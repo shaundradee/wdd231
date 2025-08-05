@@ -464,6 +464,30 @@ dialog::backdrop {
   border: 1px solid #5A3E36;
 }
 
+.message-box {
+  position: relative;
+  background-color: #f9f9f9;
+  border: 1px solid #5A3E36;
+  padding: 1rem 2.5rem 1rem 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.message-box button {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
 
 /* === Footer === */
 footer {

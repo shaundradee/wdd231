@@ -54,3 +54,37 @@ async function loadDiscoveryCards() {
 }
 
 document.addEventListener('DOMContentLoaded', loadDiscoveryCards);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const visitBox = document.getElementById("visit-message");
+  const visitText = document.getElementById("visit-text");
+  const closeBtn = document.getElementById("close-visit-message");
+
+  const lastVisit = localStorage.getItem("lastVisit");
+  const now = Date.now();
+  let message = "";
+
+  if (!lastVisit) {
+    message = "Welcome! Let us know if you have any questions.";
+  } else {
+    const msInDay = 1000 * 60 * 60 * 24;
+    const daysBetween = Math.floor((now - parseInt(lastVisit)) / msInDay);
+
+    if (daysBetween < 1) {
+      message = "Back so soon! Awesome!";
+    } else if (daysBetween === 1) {
+      message = "You last visited 1 day ago.";
+    } else {
+      message = `You last visited ${daysBetween} days ago.`;
+    }
+  }
+
+  visitText.textContent = message;
+  visitBox.classList.remove("hidden");
+
+  localStorage.setItem("lastVisit", now.toString());
+
+  closeBtn.addEventListener("click", () => {
+    visitBox.classList.add("hidden");
+  });
+});
