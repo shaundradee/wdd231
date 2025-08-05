@@ -448,11 +448,11 @@ dialog::backdrop {
 
 .discovery-card button {
   grid-area: button;
-  background-color: #A68A64;
+  background-color: #5A3E36;
   margin: 0 auto;
   width: 100%;
   display: block;
-  color: #fff;
+  color: white;
   border: none;
   padding: 1rem;
   border-radius: 15px;
