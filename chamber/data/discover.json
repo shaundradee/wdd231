@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Draymoor Botanical Gardens",
+        "address": "123 Garden Lane, Draymoor",
+        "image": "images/garden.webp",
+        "description": "Wander among vibrant flower displays, rare plants, and serene walking paths — perfect for a relaxing afternoon."
+    },
+    {
+        "name": "Silverstream River Kayaking",
+        "address": "45 Riverbend Road, Draymoor",
+        "image": "images/kayak.webp",
+        "description": "Enjoy a gentle paddle down the scenic Silverstream, with stunning views of forested hills and local wildlife."
+    },
+    {
+        "name": "Draymoor Artisan Market",
+        "address": "Market Square, Draymoor",
+        "image": "images/market.webp",
+        "description": "Every Saturday, local artists, bakers, and craftsmen gather to sell handmade goods and delicious treats."
+    },
+    {
+        "name": "Maple Lane Bistro",
+        "address": "78 Maple Lane, Draymoor",
+        "image": "images/bistro.webp",
+        "description": "Savor farm-to-table dishes inspired by Draymoor's fresh produce and regional recipes."
+    },
+    {
+        "name": "Whispering Pines Trail",
+        "address": "Trailhead at 210 Pinecrest Road, Draymoor",
+        "image": "images/hike.webp",
+        "description": "A moderate hiking path with sweeping views, shaded forest sections, and a lookout tower at the summit."
+    },
+    {
+        "name": "Annual Lantern Festival",
+        "address": "Festival Grounds, Main Street, Draymoor",
+        "image": "images/lantern.webp",
+        "description": "Watch hundreds of lanterns float into the night sky, accompanied by live music and food stalls."
+    },
+    {
+        "name": "Draymoor History Museum",
+        "address": "15 Heritage Avenue, Draymoor",
+        "image": "images/museum.webp",
+        "description": "Learn about the town's founding, mining heritage, and cultural traditions through interactive exhibits."
+    },
+    {
+        "name": "Brookside Park",
+        "address": "56 Brookside Drive, Draymoor",
+        "image": "images/park.webp",
+        "description": "Picnic areas, playgrounds, a small petting zoo, and seasonal outdoor movie nights make this a family favorite."
+    },
+    {
+        "name": "The Book Nook Café",
+        "address": "33 Elm Street, Draymoor",
+        "image": "images/book.webp",
+        "description": "Relax with a latte and browse a selection of local author books in this cozy community gathering spot."
+    }
+]

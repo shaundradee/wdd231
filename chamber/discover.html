@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Draymoor Chamber of Commerce Directory Page</title>
-    <meta name="description" content="WDD 231: Web Frontend Development I | Draymoor Chamber of Commmerce Directory Page">
+    <title>Chamber of Commerce Landing/Home Page</title>
+    <meta name="description" content="WDD 231: Web Frontend Development I | Draymoor Chamber of Commmerce Home Page">
     <meta name="author" content="Shaundra Strong">
 
     <meta property="og:title" content="Chamber of Commerce">
@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 769px)">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 
 </head>
-<body id="directory">
+<body id="discover">
     <header>
         <img src="images/draymoorlogo.webp" alt="draymoor chamber of commerce logo">
         <div class="site-title">Draymoor Chamber of Commerce</div>
@@ -36,22 +36,14 @@
         <nav>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <h1>Business Directory</h1>
-        </div>
-        <div class="view-toggle">
-            <button id="gridView">Grid View</button>
-            <button id="listView">List View</button>
-        </div>
+    <main class="discovery-main">
 
-        <div id="membersContainer" class="grid"></div>
     </main>
     <footer>
         <div class="chamb">
