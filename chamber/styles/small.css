@@ -464,14 +464,14 @@ dialog::backdrop {
   border: 1px solid #5A3E36;
 }
 
+/* pop-up for discover page */
 .message-box {
   position: relative;
   background-color: #f9f9f9;
   border: 1px solid #5A3E36;
-  padding: 1rem 2.5rem 1rem 1rem;
+  padding: 1rem;
   border-radius: 6px;
-  margin: 1rem 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .message-box button {
@@ -481,7 +481,6 @@ dialog::backdrop {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #555;
   cursor: pointer;
 }
 

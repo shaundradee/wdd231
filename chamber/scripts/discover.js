@@ -55,6 +55,8 @@ async function loadDiscoveryCards() {
 
 document.addEventListener('DOMContentLoaded', loadDiscoveryCards);
 
+
+// ========Visit Message=========
 document.addEventListener("DOMContentLoaded", () => {
   const visitBox = document.getElementById("visit-message");
   const visitText = document.getElementById("visit-text");
@@ -71,11 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const daysBetween = Math.floor((now - parseInt(lastVisit)) / msInDay);
 
     if (daysBetween < 1) {
-      message = "Back so soon! Awesome!";
+      message = "Yay! Thanks for popping in!";
     } else if (daysBetween === 1) {
-      message = "You last visited 1 day ago.";
+      message = "You're back! You last visited 1 day ago.";
     } else {
-      message = `You last visited ${daysBetween} days ago.`;
+      message = `Welcome Back! You last visited ${daysBetween} days ago.`;
     }
   }
 
