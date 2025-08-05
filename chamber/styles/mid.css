@@ -1,0 +1,72 @@
+/* MID SIZE for Discover Page*/
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discovery-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    .discovery-card figure img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .discovery-card figure {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+
+
+    .discovery-card address {
+        margin-top: 1rem;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .discovery-card p {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    .discovery-card h2,
+    .discovery-card button {
+        grid-column: 1 / -1; /* Make them span both columns */
+    }
+
+    .discovery-card figure img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* === Discover Page === */
+
+@media screen and (min-width: 1025px) {
+    .discovery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two cards side by side */
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .discovery-card {
+        max-width: 100%;
+        /* keep the inner layout as-is */
+    }
+
+    .discovery-card figure img{
+        border-radius: 8px;
+    }
+    
+    .discovery-card figure img:hover {
+        box-shadow: 0 0 50px #333;
+    } 
+}

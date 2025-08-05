@@ -392,6 +392,79 @@ dialog::backdrop {
 }
 
 
+/* === Discover Page- grid naming required === */
+.discovery-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+;
+}
+
+.discovery-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "address"
+    "desc"
+    "button";
+  gap: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.discovery-card figure { 
+  grid-area: image; 
+  margin: 5px; 
+}
+
+.discovery-card figure img {
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: block; 
+  border-radius: 8px;
+} 
+
+
+.discovery-card h2 { 
+  grid-area: title; 
+  font-family: 'Xanh Mono', monospace;
+}
+
+.discovery-card address { 
+  grid-area: address; 
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic; 
+}
+.discovery-card p { 
+  grid-area: desc; 
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.discovery-card button {
+  grid-area: button;
+  background-color: #A68A64;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.discovery-card button:hover {
+  color: #5A3E36;
+  background-color: #F4F1ED;
+  border: 1px solid #5A3E36;
+}
+
+
 /* === Footer === */
 footer {
   background-color: #5A3E36;
