@@ -1,0 +1,102 @@
+@media only screen and (min-width: 769px) {
+
+    :root {
+        --color-red: rgb(247, 74, 74);
+        --color-silver: rgb(225, 225, 225);
+        --color-nuetral-light: rgb(148, 206, 202);
+        --color-nuetral-mid: rgb(86, 129, 161);
+        --color-nuetral-dark: rgb(24, 60, 93);
+        --font-family-primary: "Nunito Sans", sans-serif;
+        --font-family-secondary: "Bitter", serif;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    } 
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 220px;
+        height: 100vh;
+        background-color: var(--color-red);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+
+    /* Container to hold the logo and nav separately */
+    header a {
+        display: block;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 25px;
+    }
+
+    /* Nav fills remaining space */
+    nav {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center; /* center links vertically in the remaining space */
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-family: var(--font-family-primary);
+        color: black;
+        font-weight: bold;
+        font-size: 1.25rem;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        color: var(--color-nuetral-mid);
+    }
+
+    main {
+        margin-left: 220px; /* same as sidebar width */
+        padding: 2rem;
+        background-color: #fff;
+        min-height: calc(100vh - 60px); /* leave space for footer */
+        box-sizing: border-box;
+    }
+
+
+    /* --- Footer --- */
+    footer {
+        margin-left: 220px; /* align with content */
+        background-color: var(--color-nuetral-light);
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #ccc;
+    }
+}

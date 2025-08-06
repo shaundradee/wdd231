@@ -15,76 +15,82 @@
 } 
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 100vh;
     background-color: var(--color-red);
-    display: flex;
-    flex-direction: column;
+    color: #F4F1ED;
     padding: 1rem;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Container to hold the logo and nav separately */
-header a {
-    display: block;
-    margin-bottom: 2rem;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 header img {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 35px;
+    height: 80px;
+    margin-right: 1rem;
+    border-radius: 20px;
 }
 
-/* Nav fills remaining space */
-nav {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* center links vertically in the remaining space */
+
+/* === Navigation (put media max to avoid styling override when flexing to larger screen) === */
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        font-family: var(--font-family-secondary);
+        display: block;
+        font-size: 2rem;
+        background: none;
+        color: #F4F1ED;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: 2PX solid var(--color-silver);
+        border-radius: 5px;
+        width: 75px;
+        padding: 5px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    nav ul.show {
+        display: flex;
+        border: 2px solid var(--color-silver);
+        border-radius: 8px;
+        margin: 2px;
+    }
+
+    nav a {
+        color: var(--color-nuetral-dark);
+        text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: var(--color-nuetral-light);
+        color: #2C2C2C;
+    }
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
 
-nav a {
-    text-decoration: none;
-    font-family: var(--font-family-primary);
-    color: black;
-    font-weight: bold;
-    font-size: 1.25rem;
-    padding: 2px;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    color: var(--color-nuetral-mid);
-}
-
+/* === Wayfinder === */
 .active {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-main {
-    margin-left: 220px; /* same as sidebar width */
-    padding: 2rem;
-    background-color: #fff;
-    min-height: calc(100vh - 60px); /* leave space for footer */
-    box-sizing: border-box;
-}
 
 /* Style the h1 inside main as a page title */
 main h1 {
@@ -95,13 +101,6 @@ main h1 {
     padding-bottom: 0.5rem;
 }
 
-/* Home Page Section */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 1px;
-}
 
 /* Profile Page */
 .profile {
@@ -115,7 +114,7 @@ main h1 {
 }
 
 .profile img {
-    max-width: 300px;
+    max-width: 260px;
     height: auto;
     border: 5px solid var(--color-nuetral-light);
     border-radius: 50%;
@@ -152,26 +151,8 @@ main li {
     margin-left: 4rem;
 }
 
-/* Optional: Style the table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 0.75rem;
-    text-align: left;
-}
-
-th {
-    background-color: #f0f0f0;
-}
-
 /* --- Footer --- */
 footer {
-    margin-left: 220px; /* align with content */
     background-color: var(--color-nuetral-light);
     text-align: center;
     padding: 1rem;

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     getWeather();
     document.getElementById("theButton").addEventListener("click", function() {
     window.location.href = "join.html";
-  });
+    });
   }
   if (page === "join") {
     document.querySelectorAll('.mem-card').forEach(card => {

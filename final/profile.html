@@ -7,13 +7,14 @@
     <meta name="description" content="WDD 231: Web Frontend Development | QuickShine Carwash Final Project">
     <meta name="author" content="Shaundra Strong">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 769px)">
 
     <script type="module" src="scripts/final.js"></script>
 
     <meta property="og:title" content="Site Plan">
     <meta property="og:description" content="WDD231 Final Project">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:image" content="https://shaundradee.github.io/wdd231/">
+    <meta property="og:url" content="https://shaundradee.github.io/wdd231">
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -25,14 +26,15 @@
 <body id="profile-page">
     <header>
         <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
+        <button id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+            &#9776;
+        </button>
         <nav>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="profile.html" class="active">Profile</a></li>
-                <li><a href="adminUserPerm.html">Users & Permissions</a></li>
-                <li><a href="adminReports.html">Reports</a></li>
-                <li><a href="adminEditBarrels.html">Edit Barrels</a></li>
-                <li><a href="adminAlerts.html">Alerts</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
            </ul>
         </nav>
     </header>
@@ -44,7 +46,7 @@
     </main>  
 
     <footer>
-        <p>&copy; 2025 Shaundra Strong | WDD 231 Final Project</p>
+        <p>&copy; 2025 Shaundra Strong | WDD 231 Web Dev Final Project</p>
     </footer> 
 </body>
 </html>
