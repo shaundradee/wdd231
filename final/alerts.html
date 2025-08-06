@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 769px)">
 
     <script type="module" src="scripts/final.js"></script>
+    <script src="scripts/addAlert.js" defer></script>
 
     <meta property="og:title" content="Site Plan">
     <meta property="og:description" content="WDD231 Final Project">
-    <meta property="og:image" content="https://shaundradee.github.io/wdd231/">
+    <meta property="og:image" content="https://shaundradee.github.io/wdd231/final/images/quickShine.webp">
     <meta property="og:url" content="https://shaundradee.github.io/wdd231">
 
     <link rel="icon" href="images/favicon.ico">
@@ -40,8 +41,60 @@
     </header>
     <main>
         <h1>Alerts</h1>
+        <table id="userTable">
+            <thead>ACTIVE ALERTS</thead>
+        </table>
+        <button id="openModalBtn">ADD ALERT</button>
+        <dialog id="formModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <h3>Manually Add Alert</h3>
+                <form id="alertForm">
+                    <fieldset>
+                        <legend>Alert Details</legend>
+                        <label for="alertType">Alert Type: *</label>
+                        <select name="alertType" id="alertType" required>
+                            <option value="">Please Select Type &#9662;</option>
+                            <option value="inventoryOrder">Order Inventory</option>
+                            <option value="repair">Equiptment Repair</option>
+                            <option value="replace">Equipment Replacement</option>
+                            <option value="other">Other</option>
+                        </select>                            
+                        <label for="description">Description: *</label>
+                        <textarea name="description" id="description" rows="2" cols="40" placeholder="Enter a brief description of alert details..." required></textarea>
+                        <label for="priority">Priority Level: *</label>
+                        <select name="priority" id="priority" required>
+                            <option value="">Please Select Level &#9662;</option>
+                            <option value="highPriority">High Priority</option>
+                            <option value="medPriority">Medium Priority</option>
+                            <option value="lowPriority">Low Priority</option>
+                        </select>
+                        <label for="location">Location: *</label>
+                        <select name="location" id="location" required>
+                            <option value="">Please Select Location &#9662;</option>
+                            <option value="millcreek">Millcreek</option>
+                            <option value="riverson">Riverson</option>
+                            <option value="arthill">Arthill</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Status</legend>
+                        <p>Current Completion Status: *</p>
+                        <div class="label">
+                            <input type="radio" name="status" id="new" value="Needs to be Worked" checked>
+                            <label for="new">Needs to be Worked</label>
+                        </div>
+                        <div class="label">
+                            <input type="radio" name="status" id="in-progress" value="In Progress">
+                            <label for="in-progress">In Progress</label>
+                        </div>
+                        <input type="hidden" name="timestamp" id="timestamp" value="">
+                    </fieldset>
+                    <button type="submit" class="addAlertBtn">ADD</button>
+                </form>
+            </div>
+        </dialog>
     </main>  
-
     <footer>
         <p>&copy; 2025 Shaundra Strong | WDD 231 Web Dev Final Project</p>
     </footer> 

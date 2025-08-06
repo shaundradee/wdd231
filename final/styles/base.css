@@ -39,13 +39,13 @@ header img {
         display: block;
         font-size: 2rem;
         background: none;
-        color: #F4F1ED;
+        color: black;
         border: none;
         cursor: pointer;
         position: absolute;
         top: 1rem;
         right: 1rem;
-        border: 2PX solid var(--color-silver);
+        border: 2px solid black;
         border-radius: 5px;
         width: 75px;
         padding: 5px;
@@ -133,6 +133,87 @@ main h1 {
 .profile h2 {
     text-decoration: underline;
 }
+
+/* Alerts Modal Dialog */
+#openModalBtn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--color-nuetral-light);
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-content {
+    position: fixed;
+    top: 3vh;   /* 10% from top of viewport */
+    left: 50%;   /* center horizontally */
+    transform: translateX(-50%); 
+    overflow: auto; /* should fix it to scroll */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-silver);
+    font-family: var(--font-family-secondary);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+dialog::backdrop {
+  background-color: rgb(86, 129, 161, 0.35);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: var(--font-family-primary);
+}
+
+legend {
+    font-family: var(--font-family-secondary);
+}
+
+.modal-content h3 {
+    font-family: var(--font-family-primary);
+    padding: .5rem;
+    margin-left: .5rem;
+}
+
+#alertForm label,
+.label {
+    margin-bottom: .25rem;
+    margin-top: .25rem;
+    font-family: var(--font-family-primary);
+}
+
+#alertForm p {
+    margin-left: 0;
+    font-family: var(--font-family-primary);
+}
+
+.close {
+    width: 44px;
+    height: 34px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.addAlertBtn {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 1rem;
+    float: right;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
 
 /* Site Plan styling*/
 h2 {
