@@ -66,10 +66,16 @@ nav a {
     color: black;
     font-weight: bold;
     font-size: 1.25rem;
+    padding: 2px;
+    border-radius: 5px;
 }
 
 nav a:hover {
     color: var(--color-nuetral-mid);
+}
+
+.active {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -87,6 +93,46 @@ main h1 {
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #ccc;
     padding-bottom: 0.5rem;
+}
+
+/* Home Page Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1px;
+}
+
+/* Profile Page */
+.profile {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2px;
+    background-color: var(--color-silver);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.profile img {
+    max-width: 300px;
+    height: auto;
+    border: 5px solid var(--color-nuetral-light);
+    border-radius: 50%;
+    overflow: hidden;
+    grid-row: 1/ -6;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile h2,
+.profile p {
+    grid-column: 2;
+    text-align: start;
+}
+
+.profile h2 {
+    text-decoration: underline;
 }
 
 /* Site Plan styling*/
