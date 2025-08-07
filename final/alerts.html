@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="alertPage">
     <header>
         <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
         <button id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
@@ -41,8 +41,22 @@
     </header>
     <main>
         <h1>Alerts</h1>
-        <table id="userTable">
-            <thead>ACTIVE ALERTS</thead>
+        <table id="alertTable">
+            <thead>
+                <tr><th class="thead" colspan="8">ACTIVE ALERTS</th></tr>
+                <tr>
+                <th>Priority</th>
+                <th>Type</th>
+                <th>Desc.</th>
+                <th>Loc.</th>
+                <th>Status</th>
+                <th>Alert Date</th>
+                <th>Complete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- New alerts will be inserted here -->
+            </tbody>
         </table>
         <button id="openModalBtn">ADD ALERT</button>
         <dialog id="formModal" class="modal">
@@ -55,10 +69,10 @@
                         <label for="alertType">Alert Type: *</label>
                         <select name="alertType" id="alertType" required>
                             <option value="">Please Select Type &#9662;</option>
-                            <option value="inventoryOrder">Order Inventory</option>
-                            <option value="repair">Equiptment Repair</option>
-                            <option value="replace">Equipment Replacement</option>
-                            <option value="other">Other</option>
+                            <option value="Order Inventory">Order Inventory</option>
+                            <option value="Repair">Equiptment Repair</option>
+                            <option value="Replacement">Equipment Replacement</option>
+                            <option value="Other">Other</option>
                         </select>                            
                         <label for="description">Description: *</label>
                         <textarea name="description" id="description" rows="2" cols="40" placeholder="Enter a brief description of alert details..." required></textarea>
@@ -72,9 +86,9 @@
                         <label for="location">Location: *</label>
                         <select name="location" id="location" required>
                             <option value="">Please Select Location &#9662;</option>
-                            <option value="millcreek">Millcreek</option>
-                            <option value="riverson">Riverson</option>
-                            <option value="arthill">Arthill</option>
+                            <option value="Millcreek">Millcreek</option>
+                            <option value="Riverson">Riverson</option>
+                            <option value="Arthill">Arthill</option>
                         </select>
                     </fieldset>
                     <fieldset>
@@ -88,7 +102,6 @@
                             <input type="radio" name="status" id="in-progress" value="In Progress">
                             <label for="in-progress">In Progress</label>
                         </div>
-                        <input type="hidden" name="timestamp" id="timestamp" value="">
                     </fieldset>
                     <button type="submit" class="addAlertBtn">ADD</button>
                 </form>
@@ -100,3 +113,4 @@
     </footer> 
 </body>
 </html>
+

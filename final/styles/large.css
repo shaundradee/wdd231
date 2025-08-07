@@ -90,6 +90,15 @@
         box-sizing: border-box;
     }
 
+    main h1 {
+        margin-left: 0;
+    }
+
+    /* Alerts Page */
+    #openModalBtn {
+        margin-left: 0;
+    }
+
 
     /* --- Footer --- */
     footer {
