@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Orders</title>
+    <meta name="description" content="WDD 231: Web Frontend Development | QuickShine Carwash Final Project">
+    <meta name="author" content="Shaundra Strong">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 769px)">
+
+    <script type="module" src="scripts/final.js"></script>
+    <script src="scripts/addOrder.js" defer></script>
+
+    <meta property="og:title" content="Site Plan">
+    <meta property="og:description" content="WDD231 Final Project">
+    <meta property="og:image" content="https://shaundradee.github.io/wdd231/final/images/quickShine.webp">
+    <meta property="og:url" content="https://shaundradee.github.io/wdd231">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body id="work">
+    <header>
+        <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
+        <button id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+            &#9776;
+        </button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="workOrder.html" class="active">Work Orders</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Work Orders</h1>
+        <table id="alertTable">
+            <thead>
+                <tr><th class="thead" colspan="8">ACTIVE WORK ORDERS</th></tr>
+                <tr>
+                <th>Type</th>
+                <th>Desc.</th>
+                <th>Loc.</th>
+                <th>Status</th>
+                <th>Log Date</th>
+                <th>Complete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- New alerts will be inserted here -->
+            </tbody>
+        </table>
+        <button id="openModalBtn">ADD WORK ORDER</button>
+        <dialog id="formModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <h3>Add Work Order</h3>
+                <form id="alertForm">
+                    <fieldset>
+                        <legend>Work Order</legend>
+                        <label for="alertType">Order Type: *</label>
+                        <select name="alertType" id="alertType" required>
+                            <option value="">Please Select Type &#9662;</option>
+                            <option value="Order Inventory">Order Inventory</option>
+                            <option value="Repair">Equiptment Repair</option>
+                            <option value="Replacement">Equipment Replacement</option>
+                            <option value="Other">Other</option>
+                        </select>                            
+                        <label for="description">Description: *</label>
+                        <textarea name="description" id="description" rows="2" cols="40" placeholder="Enter a brief description of alert details..." required></textarea>
+                        <label for="location">Location: *</label>
+                        <select name="location" id="location" required>
+                            <option value="">Please Select Location &#9662;</option>
+                            <option value="Downtown">Downtown</option>
+                            <option value="Airport">Airport</option>
+                            <option value="Suburban">Suburban</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Status</legend>
+                        <p>Current Completion Status: *</p>
+                        <div class="label">
+                            <input type="radio" name="status" id="new" value="Needs to be Worked" checked>
+                            <label for="new">Needs to be Worked</label>
+                        </div>
+                        <div class="label">
+                            <input type="radio" name="status" id="in-progress" value="In Progress">
+                            <label for="in-progress">In Progress</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="addAlertBtn">ADD</button>
+                </form>
+            </div>
+        </dialog>
+    </main>  
+    <footer>
+        <div class="icons">
+            <a href="https://github.com/shaundradee" target="_blank"><img src="images/github.svg" alt="github icon" width="44" height="44"></a>
+            <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn" width="44" height="44"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook" width="44" height="44"></a>
+        </div>
+        <div>
+            <p>&copy; <span id="currentyear">2025</span> Shaundra Strong | Web Dev WDD231 Final Project</p>
+            <p><span id="lastModified">Modification Loading...</span></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="home-page">
     <header>
         <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
         <button id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
@@ -33,32 +33,45 @@
             <ul id="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="reports.html">Reports</a></li>
+                <li><a href="workOrder.html">Work Orders</a></li>
                 <li><a href="alerts.html">Alerts</a></li>
            </ul>
         </nav>
     </header>
     <main>
         <h1>Home</h1>
-                <table id="glanceTable">
-            <thead>
-                <tr><th class="thead" colspan="8">At a Glance</th></tr>
-                <tr>
-                <th>Priority</th>
-                <th>Type</th>
-                <th>Desc.</th>
-                <th>Loc.</th>
-                <th>Status</th>
-                <th>Alert Date</th>
-                <th>Complete</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- New alerts will be inserted here -->
-            </tbody>
+        <figure>
+            <img src="images/airport.webp" alt="airport carwash location image" loading="lazy">
+            <div>
+                <figcaption>QuickShine Car Wash: Airport Location</figcaption>
+                <address>980 Skyway Boulevard, Airport District, Metro City, MC 48235</address>
+            </div>
+        </figure>
+        <figure>
+            <img src="images/downtown.webp" alt="downtown carwash location image" loading="lazy">
+            <div>
+                <figcaption>QuickShine Car Wash: Downtown Location</figcaption>
+                <address>14588 Main Street, Downtown, Metro City, MC 48201</address>
+            </div>
+        </figure>
+        <figure>
+            <img src="images/suburban.webp" alt="suburban carwash location image" loading="lazy">
+            <div>
+                <figcaption>QuickShine Car Wash: Suburban Location</figcaption>
+                <address>2275 Oakview Drive, Suburban Heights, Metro City, MC 48257</address>
+            </div>
+        </figure>
     </main>  
     <footer>
-        <p>&copy; 2025 Shaundra Strong | WDD 231 Web Dev Final Project</p>
-    </footer> 
+        <div class="icons">
+            <a href="https://github.com/shaundradee" target="_blank"><img src="images/github.svg" alt="github icon" width="44" height="44"></a>
+            <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn" width="44" height="44"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook" width="44" height="44"></a>
+        </div>
+        <div>
+            <p>&copy; <span id="currentyear">2025</span> Shaundra Strong | Web Dev WDD231 Final Project</p>
+            <p><span id="lastModified">Modification Loading...</span></p>
+        </div>
+    </footer>
 </body>
 </html>

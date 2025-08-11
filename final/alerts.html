@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 769px)">
 
     <script type="module" src="scripts/final.js"></script>
-    <script src="scripts/addAlert.js" defer></script>
+    <script src="scripts/activeAlerts.js" defer></script>
 
     <meta property="og:title" content="Site Plan">
     <meta property="og:description" content="WDD231 Final Project">
@@ -34,7 +34,7 @@
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="reports.html">Reports</a></li>
+                <li><a href="workOrder.html">Work Orders</a></li>
                 <li><a href="alerts.html" class="active">Alerts</a></li>
            </ul>
         </nav>
@@ -43,74 +43,31 @@
         <h1>Alerts</h1>
         <table id="alertTable">
             <thead>
-                <tr><th class="thead" colspan="8">ACTIVE ALERTS</th></tr>
+                <tr><th class="thead" colspan="5">ACTIVE ALERTS</th></tr>
                 <tr>
-                <th>Priority</th>
-                <th>Type</th>
+                <th></th>
+                <th>Barrel</th>
                 <th>Desc.</th>
                 <th>Loc.</th>
-                <th>Status</th>
                 <th>Alert Date</th>
-                <th>Complete</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- New alerts will be inserted here -->
             </tbody>
         </table>
-        <button id="openModalBtn">ADD ALERT</button>
-        <dialog id="formModal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="closeModalBtn">&times;</span>
-                <h3>Manually Add Alert</h3>
-                <form id="alertForm">
-                    <fieldset>
-                        <legend>Alert Details</legend>
-                        <label for="alertType">Alert Type: *</label>
-                        <select name="alertType" id="alertType" required>
-                            <option value="">Please Select Type &#9662;</option>
-                            <option value="Order Inventory">Order Inventory</option>
-                            <option value="Repair">Equiptment Repair</option>
-                            <option value="Replacement">Equipment Replacement</option>
-                            <option value="Other">Other</option>
-                        </select>                            
-                        <label for="description">Description: *</label>
-                        <textarea name="description" id="description" rows="2" cols="40" placeholder="Enter a brief description of alert details..." required></textarea>
-                        <label for="priority">Priority Level: *</label>
-                        <select name="priority" id="priority" required>
-                            <option value="">Please Select Level &#9662;</option>
-                            <option value="highPriority">High Priority</option>
-                            <option value="medPriority">Medium Priority</option>
-                            <option value="lowPriority">Low Priority</option>
-                        </select>
-                        <label for="location">Location: *</label>
-                        <select name="location" id="location" required>
-                            <option value="">Please Select Location &#9662;</option>
-                            <option value="Millcreek">Millcreek</option>
-                            <option value="Riverson">Riverson</option>
-                            <option value="Arthill">Arthill</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Status</legend>
-                        <p>Current Completion Status: *</p>
-                        <div class="label">
-                            <input type="radio" name="status" id="new" value="Needs to be Worked" checked>
-                            <label for="new">Needs to be Worked</label>
-                        </div>
-                        <div class="label">
-                            <input type="radio" name="status" id="in-progress" value="In Progress">
-                            <label for="in-progress">In Progress</label>
-                        </div>
-                    </fieldset>
-                    <button type="submit" class="addAlertBtn">ADD</button>
-                </form>
-            </div>
-        </dialog>
     </main>  
     <footer>
-        <p>&copy; 2025 Shaundra Strong | WDD 231 Web Dev Final Project</p>
-    </footer> 
+        <div class="icons">
+            <a href="https://github.com/shaundradee" target="_blank"><img src="images/github.svg" alt="github icon" width="44" height="44"></a>
+            <a href="https://www.linkedin.com/in/shaundra-strong" target="_blank"><img src="images/linked.svg" alt="linkedIn" width="44" height="44"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.svg" alt="facebook" width="44" height="44"></a>
+        </div>
+        <div>
+            <p>&copy; <span id="currentyear">2025</span> Shaundra Strong | Web Dev WDD231 Final Project</p>
+            <p><span id="lastModified">Modification Loading...</span></p>
+        </div>
+    </footer>
 </body>
 </html>
 

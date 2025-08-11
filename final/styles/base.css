@@ -1,7 +1,7 @@
 :root {
     --color-red: rgb(247, 74, 74);
     --color-silver: rgb(225, 225, 225);
-    --color-nuetral-light: rgb(148, 206, 202);
+    --color-nuetral-light: #94ceca;
     --color-nuetral-mid: rgb(86, 129, 161);
     --color-nuetral-dark: rgb(24, 60, 93);
     --font-family-primary: "Nunito Sans", sans-serif;
@@ -84,7 +84,9 @@ header img {
         color: #2C2C2C;
     }
 
-    #alertPage {
+    #alertPage,
+    #home-page,
+    #work {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -112,8 +114,40 @@ main h1 {
     padding-bottom: 0.5rem;
 }
 
+main{
+    margin: 5px;
+}
 
-/* Profile Page */
+/* === Home Page === */
+figure {
+    background-color: var(--color-silver);
+    border: 1px solid var(--color-nuetral-mid);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-family: var(--font-family-secondary);
+}
+
+figure img {
+    display: block;
+    max-width: 325px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+figcaption, 
+address {
+    text-align: center;
+    padding: 5px;
+}
+
+/* === Profile Page === */
 .profile {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -302,4 +336,15 @@ footer {
     text-align: center;
     padding: 1rem;
     border-top: 1px solid #ccc;
+}
+
+footer .icons img {
+  width: 44px;
+  height: 44px;
+  padding: 5px;
+}
+
+.icons a:hover {
+  background-color: var(--color-red);
+  border-radius: 45%;
 }
