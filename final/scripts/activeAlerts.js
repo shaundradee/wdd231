@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    getAlerts();
-});
-
 async function getAlerts() {
     for (let i = 1; i < 4; i++) {
 
@@ -55,4 +51,4 @@ function addAlert(data) {
     });
 }
 
-
+getAlerts();
