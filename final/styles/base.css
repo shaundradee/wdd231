@@ -84,7 +84,7 @@ header img {
         color: #2C2C2C;
     }
 
-    #alertPage,
+    /* #alertPage,
     #home-page,
     #work {
         display: flex;
@@ -94,7 +94,7 @@ header img {
 
     main {
         flex: 1;
-    }
+    } */
 }
 
 
@@ -156,6 +156,7 @@ address {
     padding: 2rem;
     border-radius: 10px;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .profile img {

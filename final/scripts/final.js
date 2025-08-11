@@ -26,6 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (page === "profile-page") {
         loadProfile();
-        menuToggle();
     }
 });
