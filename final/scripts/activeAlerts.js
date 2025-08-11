@@ -1,6 +1,6 @@
 async function getAlerts() {
     for (let i = 1; i < 4; i++) {
-
+        
         try {
             const response = await fetch(`http://18.221.184.231/api/v1/Locations/${i}/barrel-details`);
             if (!response.ok) throw new Error(`Error! Status:${response.status}`)
