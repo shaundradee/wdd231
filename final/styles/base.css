@@ -119,7 +119,13 @@ main{
 }
 
 /* === Home Page === */
+.figs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 figure {
+    max-width: 400px;
     background-color: var(--color-silver);
     border: 1px solid var(--color-nuetral-mid);
     border-radius: 10px;
@@ -307,6 +313,7 @@ table img {
 
 .deleteBtn {
     font-size: 1rem; 
+    color: black;
 }
 
 .deleteBtn:hover {
