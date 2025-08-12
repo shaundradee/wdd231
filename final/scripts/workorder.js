@@ -52,12 +52,12 @@ function updateTable() {
         const newRow = document.createElement("tr");
 
         newRow.innerHTML = `
-            <td>${entry.alertType}</td>
-            <td>${entry.description}</td>
-            <td>${entry.location}</td>
-            <td>${entry.status}</td>
-            <td>${entry.date}</td>
-            <td><button class="deleteBtn">✔️ Done</button></td>
+            <td data-label="Type">${entry.alertType}</td>
+            <td data-label="Desc.">${entry.description}</td>
+            <td data-label="Loc.">${entry.location}</td>
+            <td data-label="Status">${entry.status}</td>
+            <td data-label="Entry Date">${entry.date}</td>
+            <td data-label="Complete"><button class="deleteBtn">✔️ Done</button></td>
         `;
 
         // Append to table
