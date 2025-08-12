@@ -193,7 +193,7 @@ main {
 .employee, 
 .weather {
     display: block;
-    background-color: var(--color-nuetral-light);
+    background-color: #94ceca89;
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
