@@ -12,7 +12,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} 
+}
 
 header {
     background-color: var(--color-red);
@@ -114,11 +114,47 @@ main h1 {
     padding-bottom: 0.5rem;
 }
 
-main{
+main {
     margin: 5px;
 }
 
 /* === Home Page === */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+    margin: 5px 0;
+}
+
+.employee, 
+.weather {
+    display: block;
+    background-color: var(--color-nuetral-light);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-family: var(--font-family-primary);
+    flex: 1;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather image {
+    max-width: 50px;
+    height: auto;
+}
+
+.employee p{
+    font-size: 1.5rem;
+}
+
+
 .figs {
     display: flex;
     flex-wrap: wrap;
@@ -147,43 +183,14 @@ figcaption {
     font-weight: bold;
 }
 
-figcaption, 
-address {
+figure p {
+    font-style: italic;
+}
+
+figcaption,
+figure p {
     text-align: center;
     padding: 5px;
-}
-
-/* === Profile Page === */
-.profile {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2px;
-    background-color: var(--color-silver);
-    padding: 2rem;
-    border-radius: 10px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.profile img {
-    max-width: 260px;
-    height: auto;
-    border: 5px solid var(--color-nuetral-light);
-    border-radius: 50%;
-    overflow: hidden;
-    grid-row: 1/ -6;
-    justify-content: center;
-    align-content: center;
-}
-
-.profile h2,
-.profile p {
-    grid-column: 2;
-    text-align: start;
-}
-
-.profile h2 {
-    text-decoration: underline;
 }
 
 /* Alerts Modal Dialog */
@@ -199,17 +206,20 @@ address {
 
 .modal-content {
     position: fixed;
-    top: 3vh;  /* adjusted to fit form within vh */
-    left: 50%;   /* center horizontally */
-    transform: translateX(-50%); 
-    overflow: auto; /* should fix it to scroll */
+    top: 3vh;
+    /* adjusted to fit form within vh */
+    left: 50%;
+    /* center horizontally */
+    transform: translateX(-50%);
+    overflow: auto;
+    /* should fix it to scroll */
     display: flex;
     flex-direction: column;
     background-color: var(--color-silver);
     font-family: var(--font-family-secondary);
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 fieldset {
@@ -250,7 +260,7 @@ legend {
     color: black;
     background-color: white;
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .addAlertBtn {
@@ -263,7 +273,7 @@ legend {
     background-color: white;
     color: black;
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Alerts Table */
@@ -285,7 +295,8 @@ table {
     font-family: var(--font-family-primary);
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     border: 1px solid var(--color-silver);
     text-align: left;
@@ -293,26 +304,26 @@ th, td {
 }
 
 th {
-  background-color: #f4f4f4;
-  font-weight: bold;
+    background-color: #f4f4f4;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 table img {
-  display: block;
-  max-width: 60px;
-  height: auto;
+    display: block;
+    max-width: 60px;
+    height: auto;
 }
 
 .deleteBtn {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: black;
 }
 
@@ -328,7 +339,7 @@ h2 {
     margin: 3px;
 }
 
-p, 
+p,
 main li {
     font-family: var(--font-family-secondary);
     margin: 1rem;
@@ -348,12 +359,12 @@ footer {
 }
 
 footer .icons img {
-  width: 44px;
-  height: 44px;
-  padding: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 5px;
 }
 
 .icons a:hover {
-  background-color: var(--color-red);
-  border-radius: 45%;
+    background-color: var(--color-red);
+    border-radius: 45%;
 }

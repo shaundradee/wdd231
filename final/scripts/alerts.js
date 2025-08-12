@@ -36,10 +36,10 @@ function addAlert(data) {
         .flat(); // flatten nested arrays
 
     //loop through allAlerts to build HTML
-    const tableBody = document.querySelector('#alertTable tbody');
-
     allAlerts.forEach(alert => {
         const row = document.createElement('tr');
+        const tableBody = document.querySelector('#alertTable tbody');
+
         row.innerHTML = `
             <td><img src="images/alert.svg" alt="priority level" width = 50 loading="lazy"></td>
             <td>${alert.barrelType}</td>

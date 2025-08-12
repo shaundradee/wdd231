@@ -7,6 +7,8 @@
     <title>QuickShine Home</title>
     <meta name="description" content="WDD 231: Web Frontend Development | QuickShine Carwash Final Project">
     <meta name="author" content="Shaundra Strong">
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 769px)">
 
@@ -17,7 +19,7 @@
     <meta property="og:image" content="https://shaundradee.github.io/wdd231/final/images/quickShine.webp">
     <meta property="og:url" content="https://shaundradee.github.io/wdd231">
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,24 +46,18 @@
     </header>
     <main>
         <h1>Home</h1>
-        <h2>Our Locations:</h2>
-        <section class="figs">
-            <figure>
-                <img src="images/airport.webp" alt="airport carwash location image" loading="lazy">
-                <figcaption>QuickShine Car Wash: Airport Location</figcaption>
-                <address>980 Skyway Blvd, Airport District, Metro City, MC 48235</address>
-            </figure>
-            <figure>
-                <img src="images/downtown.webp" alt="downtown carwash location image" loading="lazy">
-                <figcaption>QuickShine Car Wash: Downtown Location</figcaption>
-                <address>14588 Main Street, North Downtown, Metro City, MC 48201</address>
-            </figure>
-            <figure>
-                <img src="images/suburban.webp" alt="suburban carwash location image" loading="lazy">
-                <figcaption>QuickShine Car Wash: Suburban Location</figcaption>
-                <address>2275 Oakview Drive, Suburban Heights, Metro City, MC 48257</address>
-            </figure>
-        </section>
+        <div class="container">
+            <div class="employee">
+                <!-- welcome message load here -->
+            </div>
+            <div class="weather">
+                <!-- weather loaded here -->
+            </div>
+        </div>
+        <h2>Our Current Locations:</h2>
+        <div class="figs">
+            <!-- locations load here from js code -->
+        </div>
     </main>
     <footer>
         <div class="icons">

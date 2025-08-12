@@ -1,0 +1,26 @@
+[
+  {
+    "img": {
+      "src": "images/airport.webp",
+      "alt": "airport carwash location image"
+    },
+    "figcaption": "QuickShine Car Wash: Airport Location",
+    "address": "980 Skyway Blvd, Airport District, Metro City, MC 48235"
+  },
+  {
+    "img": {
+      "src": "images/downtown.webp",
+      "alt": "downtown carwash location image"
+    },
+    "figcaption": "QuickShine Car Wash: Downtown Location",
+    "address": "14588 Main Street, North Downtown, Metro City, MC 48201"
+  },
+  {
+    "img": {
+      "src": "images/suburban.webp",
+      "alt": "suburban carwash location image"
+    },
+    "figcaption": "QuickShine Car Wash: Suburban Location",
+    "address": "2275 Oakview Drive, Suburban Heights, Metro City, MC 48257"
+  }
+]

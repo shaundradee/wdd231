@@ -20,11 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
 // ===== Profile Page ====
 import { loadProfile } from './profile.mjs';
 
+// === Home Page ===
+import { loadLocations } from './location.mjs';
+import { getWeather } from './weather.mjs';
 
 document.addEventListener("DOMContentLoaded", () => {
     const page = document.body.id;
 
-    if (page === "profile-page") {
+    if (page === "home-page") {
+        loadLocations();
         loadProfile();
+        getWeather();
     }
 });
