@@ -370,7 +370,13 @@ footer .icons img {
     padding: 5px;
 }
 
-.icons a:hover {
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+.icons a:hover,
+footer li a:hover {
     background-color: var(--color-red);
     border-radius: 45%;
 }
