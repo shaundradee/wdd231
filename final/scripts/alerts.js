@@ -40,13 +40,12 @@ function addAlert(data) {
         const row = document.createElement('tr');
         const tableBody = document.querySelector('#alertTable tbody');
 
-        // adding data labels for styling call purposes
         row.innerHTML = `
-            <td data-label="Alert"><img src="images/alert.svg" alt="alert image" width = 50 loading="lazy"></td>
-            <td data-label="Barrel">${alert.barrelType}</td>
-            <td data-label="Code">"${alert.barrelId}: ${alert.alertMessage}"</td>
-            <td data-label="Loc.">${locationName}</td>
-            <td data-label="Alert Date">${new Date(alert.createdAt).toLocaleString()}</td>
+            <td><img src="images/alert.svg" alt="alert image" width = 50 loading="lazy"></td>
+            <td>${alert.barrelType}</td>
+            <td>"${alert.barrelId}: ${alert.alertMessage}"</td>
+            <td>${locationName}</td>
+            <td>${new Date(alert.createdAt).toLocaleString()}</td>
         `;
         tableBody.appendChild(row);
     });
