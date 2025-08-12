@@ -1,16 +1,16 @@
 async function getAlerts() {
     for (let i = 1; i < 4; i++) {
-        
+
         try {
-            const response = await fetch(`http://18.221.184.231/api/v1/Locations/${i}/barrel-details`);
+            const response = await fetch(`http://chemenomics-api.duckdns.org/api/v1/Locations/${i}/barrel-details`);
             if (!response.ok) throw new Error(`Error! Status:${response.status}`)
-            
+
             const data = await response.json();
             addAlert(data);
         } catch (error) {
             console.error(error.message);
         }
-        
+
     }
 }
 
@@ -21,19 +21,19 @@ function addAlert(data) {
 
     // Flatten all active alerts from all barrels into one array
     const allAlerts = data.barrels
-    .filter(barrel => barrel.activeAlerts.length > 0) // only barrels with alerts
-    .map(barrel => {
-        return barrel.activeAlerts.map(alert => ({
-            location: locationName,
-            barrelId: barrel.barrelId,
-            barrelType: barrel.barrelType,
-            alertId: alert.alertId,
-            alertType: alert.alertType,
-            alertMessage: alert.alertMessage,
-            createdAt: alert.createdAt
-        }));
-    })
-    .flat(); // flatten nested arrays
+        .filter(barrel => barrel.activeAlerts.length > 0) // only barrels with alerts
+        .map(barrel => {
+            return barrel.activeAlerts.map(alert => ({
+                location: locationName,
+                barrelId: barrel.barrelId,
+                barrelType: barrel.barrelType,
+                alertId: alert.alertId,
+                alertType: alert.alertType,
+                alertMessage: alert.alertMessage,
+                createdAt: alert.createdAt
+            }));
+        })
+        .flat(); // flatten nested arrays
 
     //loop through allAlerts to build HTML
     const tableBody = document.querySelector('#alertTable tbody');
