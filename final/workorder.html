@@ -42,22 +42,24 @@
     </header>
     <main>
         <h1>Work Orders</h1>
-        <table id="alertTable">
-            <thead>
-                <tr><th class="thead" colspan="8">ACTIVE WORK ORDERS</th></tr>
-                <tr>
-                <th>Type</th>
-                <th>Desc.</th>
-                <th>Loc.</th>
-                <th>Status</th>
-                <th>Log Date</th>
-                <th>Complete</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- New alerts will be inserted here -->
-            </tbody>
-        </table>
+        <div class="table-container">
+            <table id="alertTable">
+                <thead>
+                    <tr><th class="thead" colspan="8">ACTIVE WORK ORDERS</th></tr>
+                    <tr>
+                    <th>Type</th>
+                    <th>Desc.</th>
+                    <th>Loc.</th>
+                    <th>Status</th>
+                    <th>Log Date</th>
+                    <th>Complete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- New alerts will be inserted here -->
+                </tbody>
+            </table>
+        </div>
         <button id="openModalBtn">ADD WORK ORDER</button>
         <dialog id="formModal" class="modal">
             <div class="modal-content">
